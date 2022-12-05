@@ -34,7 +34,7 @@ services:
         networks:
             - symfony
         env_file:
-            - .env.nginx.local
+            - .env
 
 volumes:
     db_volume:

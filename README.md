@@ -14,18 +14,16 @@ It is composed by 3 containers:
 
 1. 😀 Clone or download this repo.
 
-2. Create the file `.env.nginx.local` using `.env.nginx` as template. The value of the variable `NGINX_BACKEND_DOMAIN` is the `server_name` used in NGINX.
+2. In your project root, run `docker-compose up -d`
 
-3. In your project root, run `docker-compose up -d`
+3. You should work inside the `php` container.
 
-4. You should work inside the `php` container.
+4. Inside the `php` container, run `composer install` to install dependencies from `/var/www/symfony` folder.
 
-5. Inside the `php` container, run `composer install` to install dependencies from `/var/www/symfony` folder.
-
-6. Use the following value for the DATABASE_URL environment variable:
+5. Use the following value for the DATABASE_URL environment variable:
 
 ```
 DATABASE_URL=mysql://root:your_secret_password@db:3306/app_db?serverVersion=mariadb-10.10.2
 ```
 
-You should change the name, user and password of the database in the `.env` file at the root of the project.
+You can change the database and nginx settings in the `.env` file at the root of the project. This file is meant to be tracked by git.
