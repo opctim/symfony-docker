@@ -10,17 +10,31 @@ It is composed by 3 containers:
 - `php`, the PHP-FPM container with the 8.1 version of PHP.
 - `db` which is the MariaDB database container with a **MariaDB 10.8** image.
 
-## Installation
 
-1. 😀 Clone or download this repo.
+## Project setup
 
-2. In your project root, run `docker-compose up -d`
+**Notice:** For this you'll need composer to be installed on your local machine.
 
-3. You should work inside the `php` container.
+If you want to use this project as a base template for your new project, 
+simply initialize your project using:
+    
+    composer create-project opctim/symfony-docker <your new project directory name>
 
-4. Inside the `php` container, run `composer install` to install dependencies from `/var/www/symfony` folder.
 
-5. Use the following value for the DATABASE_URL environment variable:
+## Manual Installation
+
+Clone or download this repo instead of running composer create-project.
+
+
+## Infrastructure setup
+
+1. In your project root, run `docker-compose up -d`
+
+2. You should work inside the `php` container.
+
+3. Inside the `php` container, run `composer install` to install dependencies from `/var/www/symfony` folder.
+
+4. Use the following value for the DATABASE_URL environment variable:
 
 ```
 DATABASE_URL=mysql://root:your_secret_password@db:3306/app_db?serverVersion=mariadb-10.8.2
