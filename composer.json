@@ -34,7 +34,7 @@
     }
   ],
   "scripts": {
-    "post-install-cmd": [
+    "post-root-package-install": [
       "docker-compose up -d"
     ]
   }
