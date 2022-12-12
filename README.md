@@ -37,7 +37,7 @@ Clone or download this repo instead of running composer create-project.
 4. Use the following value for the DATABASE_URL environment variable:
 
 ```
-DATABASE_URL=mysql://root:your_secret_password@db:3306/app_db?serverVersion=mariadb-10.8.2
+DATABASE_URL=mysql://root:your_db_password@db:3306/app_db?serverVersion=mariadb-10.8.2
 ```
 
 You can change the database and nginx settings in the `.env` file at the root of the project. This file is meant to be tracked by git.

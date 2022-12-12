@@ -34,8 +34,8 @@
     }
   ],
   "scripts": {
-    "post-root-package-install": [
-      "docker-compose up -d"
+    "post-create-project-cmd": [
+      "post-create-project-cmd.sh"
     ]
   }
 }
