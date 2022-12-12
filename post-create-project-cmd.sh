@@ -19,7 +19,11 @@ sed -i '' -e "s/APP_DEBUG=false/APP_DEBUG=true/g" ./application/.env.local
 
 # start & setup container
 docker-compose up -d
-docker-compose exec php "composer install"
+docker-compose exec php bash -c "composer install"
 
 # delete self
 rm -rf ./post-create-project-cmd.sh
+
+printf "\nDone!\n\nHave a look at your new awesome project running at https://127.0.0.1\n"
+
+printf "\n(You'll have to trust the certificate as it is self-signed)\nHave fun!\n"
