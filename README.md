@@ -20,6 +20,7 @@ simply initialize your project using:
     
     composer create-project opctim/symfony-docker <your new project directory name>
 
+This will set everything up for you. You can have a look what it does post-install [here](https://github.com/opctim/symfony-docker/blob/master/post-create-project-cmd.sh)
 
 ## Manual Installation
 
