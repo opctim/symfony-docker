@@ -24,6 +24,6 @@ docker-compose exec php bash -c "composer install"
 # delete self
 rm -rf ./post-create-project-cmd.sh
 
-printf "\nDone!\n\nHave a look at your new awesome project running at https://127.0.0.1\n"
+printf "\nDone!\n\nHave a look at your new awesome project running at https://127.0.0.1"
 
-printf "\n(You'll have to trust the certificate as it is self-signed)\nHave fun!\n"
+printf "\n(You'll have to trust the certificate as it is self-signed)\n\nHave fun!\n\n"
