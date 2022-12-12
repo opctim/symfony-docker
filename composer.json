@@ -32,5 +32,10 @@
       "homepage": "https://github.com/opctim",
       "role": "Developer"
     }
-  ]
+  ],
+  "scripts": {
+    "post-install-cmd": [
+      "docker-compose up -d"
+    ]
+  }
 }
