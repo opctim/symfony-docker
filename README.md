@@ -1,5 +1,9 @@
 # 🐳 Docker + PHP 8.1 + MariaDB + Nginx + Symfony 6.1 Boilerplate
 
+This project is a fork from [ger86/symfony-docker](https://github.com/ger86/symfony-docker). 
+
+----
+
 ## Description
 
 This is a complete stack for running Symfony 6.1 in Docker containers using `docker-compose`.
