@@ -1,5 +1,9 @@
 # 🐳 Docker + PHP 8.1 + MariaDB + Nginx + Symfony 6.1 Boilerplate
 
+
+**Archived in favor of https://github.com/dunglas/symfony-docker**
+
+
 This project is a fork from [ger86/symfony-docker](https://github.com/ger86/symfony-docker). 
 
 ----
